@@ -1,0 +1,35 @@
+{
+    "logger": {
+        "isEnabled": true,
+        "level": "debug",
+        "path": "./logger/logs/",
+        "name": "logger.log",
+        "maxSize": 100,
+        "secretKeys": [],
+        "encoderConfig": {
+            "messageKey": "message",
+            "levelKey": "level",
+            "levelEncoder": "lowercase"
+        },
+        "rotationtime": 360
+    },
+    "postgreDataSource": {
+		"driverName": "",
+		"addr": "",
+		"port": "",
+		"database": "",
+		"user": "",
+		"password": "",
+		"enableAutoMigrate": true,
+		"retries": 3
+	},
+    "messageBird": "",
+    "jwtSecret": "",
+    "restServer": {
+        "addr": ":"
+    },
+    "redis": {
+        "addr": "",
+        "password": ""
+    }
+}
